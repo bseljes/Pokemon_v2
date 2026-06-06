@@ -1,0 +1,70 @@
+Pokemon Red Inspired Learning Project - Milestone 1 Todo
+=======================================================
+
+Goal:
+Create a simple first-person prototype using basic GameObjects while focusing on Unity backend systems, C# scripts, and gameplay logic.
+
+Milestone 1: First-Person Interaction Prototype
+-----------------------------------------------
+
+[x] Create a test scene named "BackendPrototype".
+[x] Add a Player GameObject with a CharacterController.
+[x] Add a Camera as a child of the Player.
+[x] Attach PlayerMovementController.cs to the Player.
+[x] Tune walk speed, sprint speed, jump height, and mouse sensitivity.
+[x] Create a flat ground plane.
+[x] Create simple cube obstacles with minimal scale changes.
+[x] Stop the player from walking through obstacles.
+[x] Create a few simple named locations using empty GameObjects.
+[x] Create a basic interaction system using raycasts from the camera.
+[x] Add one interactable cube that acts like a sign.
+[x] Show simple text when the player looks at the sign and presses an interact key.
+[x] Add one interactable cube that acts like an NPC.
+[x] Store NPC dialogue in a small C# data structure.
+[x] Show different dialogue lines when interacting more than once.
+[x] Add one trigger zone that detects when the player enters it.
+[x] Print useful debug messages to the Console for movement, interaction, and triggers.
+[x] Turn the Player into a prefab.
+[x] Turn one interactable object into a prefab.
+[x] Save the scene and test it in Play Mode.
+
+Good first C# scripts to build:
+------------------------------
+
+[x] PlayerMovementController.cs
+[x] CameraFollow or camera setup script, only if needed
+[x] PlayerInteractor.cs
+[x] Interactable.cs
+[x] SignInteractable.cs
+[x] NPCInteractable.cs
+[x] DialogueData.cs >> Created a simple structure in NPCDialogue instead
+[x] TriggerZone.cs
+[x] GameManager.cs
+
+
+Keep the visuals simple:
+------------------------
+
+[x] Use cubes, planes, capsules, and empty GameObjects.
+[x] Avoid spending time on models, sprites, textures, or polish.
+[x] Use basic colors only if they help you understand the scene.
+[x] Keep object sizes simple, like 1, 2, 5, or 10.
+[x] Focus on whether the systems work, not whether the game looks like Pokemon yet.
+
+Done when:
+----------
+
+[x] You can press Play.
+[x] The player can move in first person.
+[x] The camera moves with the player.
+[x] The player cannot walk through basic objects.
+[x] The player can look at an object and interact with it.
+[x] At least one object shows sign-style text.
+[x] At least one object shows NPC-style dialogue.
+[x] At least one trigger zone detects the player.
+[x] The Console shows useful debug output.
+
+Next milestone preview:
+-----------------------
+
+Milestone 2 will be about building cleaner backend structure: a simple dialogue manager, event handling, player state, scene transitions, and early data structures for Pokemon-style systems.
