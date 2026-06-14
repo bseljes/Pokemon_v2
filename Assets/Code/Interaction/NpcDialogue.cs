@@ -5,13 +5,18 @@ public class NpcDialogue : Interactable
     [SerializeField] private string npcName = "NPC";
 
     [TextArea(2, 5)]
-    [SerializeField] private string[] dialogueLines;
+    [SerializeField] private string[] firstEncounterDialogueLines;
+    [SerializeField] private string[] loopDialogueLines;
 
     [SerializeField] private int currentLineIndex;
     [SerializeField] private string line;
+    [SerializeField] private bool hasLoopDialogue = true;
+    [SerializeField] private bool firstEncounterDialogueComplete = false;
 
     public override void Interact(GameObject player)
     {
+        string[] dialogueLines = firstEncounterDialogueComplete ? loopDialogueLines : firstEncounterDialogueLines;
+
         if (dialogueLines.Length == 0)
         {
             Debug.Log($"{npcName} has nothing to say.");
@@ -22,20 +27,21 @@ public class NpcDialogue : Interactable
 
         if (TextBubbleUI.Instance != null)
         {
-            Debug.Log($"BubbleUI found: {npcName}: {line}");
             TextBubbleUI.Instance.ShowMessage(line);
         }
         else
         {
-            Debug.Log($"{npcName}: {line}");
+            Debug.Log("No TextBubbleUI instance found. Cannot display dialogue.");
         }
-        Debug.Log($"currentLineIndex = {currentLineIndex}. currentLineIndex++.");
         currentLineIndex++;
 
         if (currentLineIndex >= dialogueLines.Length)
         {
-            Debug.Log($"Resetting dialogue for {npcName}.");
             currentLineIndex = 0;
+            if (!firstEncounterDialogueComplete)
+            {
+                firstEncounterDialogueComplete = true;
+            }
         }
     }
 }

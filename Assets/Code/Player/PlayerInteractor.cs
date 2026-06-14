@@ -27,13 +27,18 @@ public class PlayerInteractor : MonoBehaviour
             Debug.DrawRay(playerCamera.transform.position, playerCamera.transform.forward * interactDistance, Color.yellow);
         }
 
+        if (GameManager.Instance != null && !GameManager.Instance.IsGameplay)
+        {
+            return;
+        }
+
         if (Keyboard.current.eKey.wasPressedThisFrame)
         {
             if (TextBubbleUI.Instance != null && (TextBubbleUI.Instance.IsShowing || TextBubbleUI.Instance.WasClosedThisFrame))
             {
                 return;
             }
-
+ 
             TryInteract();
         }
     }

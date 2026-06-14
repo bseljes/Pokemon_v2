@@ -1,0 +1,82 @@
+Pokemon Red Inspired Learning Project - Milestone 2 Todo
+========================================================
+
+Goal:
+Build a simple backend foundation for items, inventory, and cleaner dialogue behavior while keeping the scene visually simple.
+
+Milestone 2: Items, Inventory, and Dialogue Cleanup
+--------------------------------------------------
+
+[x] Create an ItemData C# structure or ScriptableObject for item information.
+[x] Give each item an item name.
+[x] Give each item a description.
+[x] Give each item an item type, such as KeyItem, Consumable, or Misc.
+[x] Update pickup objects so they reference item data instead of only destroying themselves.
+[x] Create a simple PlayerInventory script.
+[x] Store picked-up items in the player's inventory.
+[x] Print the inventory contents to the Console for debugging.
+[x] Prevent the same pickup from being collected twice.
+[x] Show a text bubble when an item is picked up.
+[x] Add at least two different pickup items to the scene.
+[x] Create a simple Inventory UI or debug display.
+[x] Add an input key to open and close the inventory display.
+[x] Make the GameManager track Inventory state.
+[x] Prevent player movement while inventory is open.
+[x] Clean up NPC dialogue logging so it only logs what is useful.
+[x] Make NPC dialogue advance one line at a time.
+[x] Decide whether NPC dialogue should loop or stop on the final line.
+[x] Add at least two NPCs with different dialogue.
+[x] Add at least one sign with different text from Milestone 1.
+[x] Save the scene and test the full loop in Play Mode.
+
+Good C# scripts to build or update:
+----------------------------------
+
+[x] ItemData.cs
+[x] ItemType.cs
+[x] PlayerInventory.cs
+[x] PickupItem.cs
+[x] InventoryUI.cs
+[x] NpcDialogue.cs
+[x] TextBubbleUI.cs
+[x] GameManager.cs
+
+Backend ideas to practice:
+--------------------------
+
+[x] ScriptableObjects or serializable data classes
+[x] Lists
+[x] Enums
+[x] Adding and removing from collections
+[x] Preventing duplicate actions
+[x] Separating item data from pickup behavior
+[x] Separating inventory data from inventory UI
+[x] Expanding GameState cleanly
+[x] Cleaner Debug.Log usage
+[x] Testing one system at a time
+
+Keep the visuals simple:
+------------------------
+
+[x] Use spheres, cubes, capsules, and simple UI panels.
+[x] Use colors to tell item types apart if helpful.
+[x] Do not spend time on final models, animations, or textures.
+[x] Keep the focus on data flow and system behavior.
+
+Done when:
+----------
+
+[x] The player can pick up more than one item.
+[x] Picked-up items are stored in an inventory list.
+[x] The inventory can be viewed somehow, either UI or debug display.
+[x] The GameManager knows when the inventory is open.
+[x] The player cannot move while dialogue or inventory is open.
+[x] NPCs can have different dialogue.
+[x] Item pickups display useful text.
+[x] The Console output is readable and intentional.
+
+Next milestone preview:
+-----------------------
+
+Milestone 3 will be about tall grass and random encounters: detecting when the player is in grass, rolling for an 
+encounter, choosing a test Pokemon, and switching the game state into an encounter mode.
