@@ -10,7 +10,7 @@ public class NpcDialogue : Interactable
 
     [SerializeField] private int currentLineIndex;
     [SerializeField] private string line;
-    [SerializeField] private bool hasLoopDialogue = true;
+    // [SerializeField] private bool hasLoopDialogue = true;
     [SerializeField] private bool firstEncounterDialogueComplete = false;
 
     public override void Interact(GameObject player)

@@ -1,0 +1,95 @@
+Pokemon Red Inspired Learning Project - Milestone 4 Todo
+=======================================================
+
+Goal:
+Turn placeholder wild encounters into a simple backend battle prototype with player Pokemon data,
+enemy Pokemon data, health, basic moves, turn flow, and battle resolution.
+
+Milestone 4: Simple Battle Prototype
+------------------------------------
+
+[ ] Create a Battle state flow that starts after a wild encounter.
+[ ] Decide whether Encounter state and Battle state should be separate or combined for now.
+[ ] Create a simple PlayerParty script.
+[ ] Add one test Pokemon to the player's party.
+[ ] Create a runtime Pokemon instance class for battle stats.
+[ ] Use PokemonData as the base data for runtime Pokemon.
+[ ] Give runtime Pokemon a level.
+[ ] Give runtime Pokemon current HP and max HP.
+[ ] Create or update MoveData for basic move information.
+[ ] Add at least two test moves.
+[ ] Give each move a name.
+[ ] Give each move a power value.
+[ ] Give each move an accuracy value.
+[ ] Give the player's test Pokemon at least one move.
+[ ] Give wild Pokemon at least one move.
+[ ] Create a BattleManager script.
+[ ] Start BattleManager when an encounter begins.
+[ ] Pass the selected wild Pokemon and level into BattleManager.
+[ ] Display or log the player's Pokemon and wild Pokemon.
+[ ] Add a temporary battle input, such as pressing 1 to use the first move.
+[ ] Make the enemy choose a move automatically.
+[ ] Decide turn order using speed or a simple player-first rule.
+[ ] Calculate basic damage.
+[ ] Subtract damage from current HP.
+[ ] Log each battle action clearly to the Console.
+[ ] Detect when the wild Pokemon reaches 0 HP.
+[ ] Detect when the player's Pokemon reaches 0 HP.
+[ ] End the battle and return to Gameplay when the battle is over.
+[ ] Prevent player movement, interaction, inventory, and grass encounters during battle.
+[ ] Save the scene and test the full loop in Play Mode.
+
+Good C# scripts to build or update:
+----------------------------------
+
+[ ] GameManager.cs
+[ ] EncounterManager.cs
+[ ] BattleManager.cs
+[ ] PlayerParty.cs
+[ ] PokemonData.cs
+[ ] RuntimePokemon.cs
+[ ] MoveData.cs
+[ ] BattleMoveResult.cs, optional
+[ ] TextBubbleUI.cs or BattleLogUI.cs
+
+Backend ideas to practice:
+--------------------------
+
+[ ] Runtime instances versus base data
+[ ] State transitions
+[ ] Turn-based logic
+[ ] Basic combat formulas
+[ ] Input during specific game states
+[ ] Passing data between systems
+[ ] Separating battle logic from encounter logic
+[ ] Guard clauses
+[ ] Debug-friendly logs
+[ ] Keeping prototype code readable
+
+Keep the visuals simple:
+------------------------
+
+[ ] Use Console logs or a simple text panel for battle messages.
+[ ] Do not build a full battle UI yet.
+[ ] Do not add Pokemon models or animations yet.
+[ ] Use placeholder names and data if needed.
+[ ] Focus on whether the battle loop works correctly.
+
+Done when:
+----------
+
+[ ] A grass encounter can start a battle.
+[ ] The player has one usable Pokemon.
+[ ] The wild Pokemon has HP and at least one move.
+[ ] The player can choose a move with a key press.
+[ ] The enemy can respond with a move.
+[ ] Damage reduces HP.
+[ ] The battle ends when one Pokemon reaches 0 HP.
+[ ] GameManager returns to Gameplay after battle.
+[ ] The player cannot move or interact during battle.
+
+Next milestone preview:
+-----------------------
+
+Milestone 5 will be about improving battle structure: battle UI, move selection menus, catch attempts,
+running away, experience gain, and cleaner battle messages.

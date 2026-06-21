@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2acefe9b4c8991b4fb21a0dc954c6804, type: 3}
+  m_Name: Pidgey
+  m_EditorClassIdentifier: Assembly-CSharp::PokemonData
+  pokedexNumber: 16
+  pokemonName: Pidgey
+  pokedexDescription: It is docile and prefers to avoid conflict. If disturbed, however,
+    it can ferociously strike back.
+  primaryType: 0
+  secondaryType: 9
+  hasSecondaryType: 1
+  catchRate: 255
+  baseExperienceYield: 55
+  levelOneMoveOne: {fileID: 11400000, guid: 27aafaeab4d99aa448c27760b8d26caf, type: 2}
+  levelOneMoveTwo: {fileID: 0}
+  levelOneMoveThree: {fileID: 0}
+  levelOneMoveFour: {fileID: 0}
+  hasEvolution: 1
+  evolutionLevel: 18
+  evolutionData: {fileID: 0}
+  encounterWeight: 5
+  maxHp: 40
+  attack: 45
+  defense: 40
+  speed: 56
+  special: 35

@@ -8,74 +8,73 @@ as a placeholder.
 Milestone 3: Tall Grass and Random Encounters
 ---------------------------------------------
 
-[ ] Review the current GrassTriggerController.cs.
-[ ] Make the player track whether they are currently inside tall grass.
-[ ] Make tall grass detection update the GameManager or a player state script.
-[ ] Add an Encounter state to GameManager.
-[ ] Prevent normal player interaction while in Encounter state.
-[ ] Decide when encounter rolls happen, such as every few steps or every few seconds while moving.
-[ ] Create a simple encounter chance value, such as 10%.
-[ ] Roll for an encounter only while the player is in tall grass.
-[ ] Roll for an encounter only while the player is moving.
-[ ] Print encounter roll results to the Console for debugging.
-[ ] Create simple PokemonData or CreatureData for test encounter information.
-[ ] Add at least three test creatures.
-[ ] Give each creature a name.
-[ ] Give each creature a level or level range.
-[ ] Give each creature a simple rarity or encounter weight.
-[ ] Create an EncounterTable for the tall grass area.
-[ ] Pick a creature from the EncounterTable when an encounter succeeds.
-[ ] Show a text bubble or popup saying what creature appeared.
-[ ] Switch GameManager to Encounter state when a creature appears.
-[ ] Add a temporary key press to exit the encounter and return to Gameplay.
-[ ] Make sure encounters do not trigger while dialogue or inventory is open.
-[ ] Save the scene and test the full loop in Play Mode.
+[x] Review the current GrassTriggerController.cs.
+[x] Make the player track whether they are currently inside tall grass.
+[x] Make tall grass detection update the GameManager or a player state script.
+[x] Add an Encounter state to GameManager.
+[x] Prevent normal player interaction while in Encounter state.
+[x] Decide when encounter rolls happen, such as every few steps or every few seconds while moving.
+[x] Create a simple encounter chance value, such as 10%.
+[x] Roll for an encounter only while the player is in tall grass.
+[x] Roll for an encounter only while the player is moving.
+[x] Print encounter roll results to the Console for debugging.
+[x] Create simple PokemonData or CreatureData for test encounter information.
+[x] Add at least three test creatures.
+[x] Give each creature a name.
+[x] Give each creature a level or level range.
+[x] Give each creature a simple rarity or encounter weight.
+[x] Create an EncounterTable for the tall grass area.
+[x] Pick a creature from the EncounterTable when an encounter succeeds.
+[x] Show a text bubble or popup saying what creature appeared.
+[x] Switch GameManager to Encounter state when a creature appears.
+[x] Add a temporary key press to exit the encounter and return to Gameplay.
+[x] Make sure encounters do not trigger while dialogue or inventory is open.
+[x] Save the scene and test the full loop in Play Mode.
 
 Good C# scripts to build or update:
 ----------------------------------
 
-[ ] GrassTriggerController.cs
-[ ] GameManager.cs
-[ ] PlayerMovementController.cs
-[ ] EncounterManager.cs
-[ ] EncounterTable.cs
-[ ] CreatureData.cs
-[ ] CreatureEncounter.cs
-[ ] TextBubbleUI.cs or PickupPopupUI.cs
+[x] GrassTriggerController.cs
+[x] GameManager.cs
+[x] PlayerMovementController.cs
+[x] EncounterManager.cs
+[x] CreatureData.cs
+[x] CreatureEncounter.cs
+[x] TextBubbleUI.cs or PickupPopupUI.cs
 
 Backend ideas to practice:
 --------------------------
 
-[ ] Trigger zones
-[ ] Player state
-[ ] Game state transitions
-[ ] Random.Range
-[ ] Percent chances
-[ ] Weighted random selection
-[ ] ScriptableObject data
-[ ] Separating area data from encounter logic
-[ ] Preventing systems from running in the wrong game state
-[ ] Debugging with clear Console logs
+[x] Trigger zones
+[x] Player state
+[x] Game state transitions
+[x] Random.Range
+[x] Percent chances
+[x] Weighted random selection
+[x] ScriptableObject data
+[x] Separating area data from encounter logic
+[x] Preventing systems from running in the wrong game state
+[x] Debugging with clear Console logs
 
 Keep the visuals simple:
 ------------------------
 
-[ ] Use a box trigger to represent tall grass.
-[ ] Use plain text for encounter messages.
-[ ] Do not build a battle screen yet.
-[ ] Do not add creature models yet.
-[ ] Focus on whether the backend flow works.
+[x] Use a box trigger to represent tall grass.
+[x] Use plain text for encounter messages.
+[x] Do not build a battle screen yet.
+[x] Do not add creature models yet.
+[x] Focus on whether the backend flow works.
 
 Done when:
 ----------
 
-[ ] The game knows when the player is inside tall grass.
-[ ] Encounters only roll while the player is moving in grass.
-[ ] Encounter rolls stop during dialogue and inventory.
-[ ] A successful roll chooses a creature from an encounter table.
-[ ] The chosen creature's name and level are displayed or logged.
-[ ] GameManager switches into Encounter state.
-[ ] The player can exit the placeholder encounter and return to Gameplay.
+[x] The game knows when the player is inside tall grass.
+[x] Encounters only roll while the player is moving in grass.
+[x] Encounter rolls stop during dialogue and inventory.
+[x] A successful roll chooses a creature from an encounter table.
+[x] The chosen creature's name and level are displayed or logged.
+[x] GameManager switches into Encounter state.
+[x] The player can exit the placeholder encounter and return to Gameplay.
 
 Next milestone preview:
 -----------------------

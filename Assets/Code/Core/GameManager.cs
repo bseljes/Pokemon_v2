@@ -10,6 +10,7 @@ public class GameManager : MonoBehaviour
     public bool IsGameplay => currentState == GameState.Gameplay;
     public bool IsDialogue => currentState == GameState.Dialogue;
     public bool IsInventory => currentState == GameState.Inventory;
+    public bool IsEncoutner => currentState == GameState.Encounter;
 
     private void Awake()
     {
@@ -37,6 +38,10 @@ public class GameManager : MonoBehaviour
         SetState(GameState.Inventory);
     }
 
+    public void EnterEncounter()
+    {
+        SetState(GameState.Encounter);
+    }
     private void SetState(GameState newState)
     {
         if (currentState == newState)
@@ -54,5 +59,6 @@ public enum GameState
     Gameplay,
     Dialogue,
     Inventory,
-    Paused
+    Paused,
+    Encounter
 }

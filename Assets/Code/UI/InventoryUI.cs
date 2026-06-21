@@ -16,7 +16,7 @@ public class InventoryUI : MonoBehaviour
     {
         if (playerInventory == null)
         {
-            playerInventory = FindFirstObjectByType<PlayerInventory>();
+            playerInventory = FindAnyObjectByType<PlayerInventory>();
         }
 
         CloseInventory();

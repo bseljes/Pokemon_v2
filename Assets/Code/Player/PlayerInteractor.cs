@@ -6,6 +6,8 @@ public class PlayerInteractor : MonoBehaviour
     [SerializeField] private Camera playerCamera;
     [SerializeField] private float interactDistance = 3f;
     [SerializeField] private bool showDebugRay = true;
+    [SerializeField] public int isInTallGrass = 0;
+    // [SerializeField] private int stepsToEncounter;
 
     private void Awake()
     {
